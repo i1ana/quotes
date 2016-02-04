@@ -5,10 +5,10 @@
 <title>Inspirational Quotes</title>
 <link href='https://fonts.googleapis.com/css?family=Sacramento|Shadows+Into+Light+Two' rel='stylesheet' type='text/css'>
  <link rel="stylesheet" type="text/css" href="quote.css">
- <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.4/angular.js"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.9/angular.js"></script>
 </head>
 
-<body class="body">
+<body class="body" ng-controller="mainController">
 <header>
 <h1 class="h1"> Quotes to Move You </h1>
 <p class='subHeader'> A Quote App </p>
@@ -25,11 +25,19 @@
 
 <div class="form">
 	<h3>Add a New Quote </h3>
-<form ng-submit="addQuote($event)">
+<!-- <form>
 	<label for=''>What is your favorite quote?</label>
 	<textarea>Add your favorite quote and who its by!</textarea>
-	<button name="submit" ng-repeat="">Submit</button>
+	<button name="quoteSubmit" ng-submit="submit()">Submit</button>
 </form> 
+ -->
+<form ng-submit="submit()">
+  Enter a quote and its author:
+  <input type="text" ng-model="text" name="quote" />
+  <input type="text" ng-model="text" name="author"/>
+  <input type="submit" id="submit" value="Submit" />
+  <pre>New Quotes! {{quotes}}</pre>
+</form>
 </div>
 
 <h4 class="h4">"Be somebody who makes everybody feel like a somebody" </h4>
@@ -38,13 +46,13 @@
 
 <div>
 	<h3> Your Random Quote is: </h3>
-	<h4> {{randomQ.author}} </h4>
-	<blockquote>{{randomQ.text}}</blockquote>
-	<button ng-click="closePopUp()" class="button"> Close me </button>
+	<h4> {{}} </h4>
+	<blockquote>{{}}</blockquote>
+	<button class="button"> Close me </button>
 </div>
 
 <div>
-	<button ng-click="random($event)" class="button">Produce a Random Quote</button>
+	<button  class="button">Produce a Random Quote</button>
 </div>	
 
 <script type="text/javascript" src="quote.js"></script>

@@ -1,9 +1,9 @@
 angular.module('quoteModule', [])
 
 angular.module('quoteModule')
-	.controller('quoteTroller', [$scope, function($scope){
+	.controller('mainController', ['$scope', function($scope){
 
-			$scope.randomQ = {}
+			// $scope.randomQ = {}
 			$scope.quotes = [
 
 				{
@@ -18,27 +18,24 @@ angular.module('quoteModule')
 				},
 				{
 					Author: 'Dr. Seuss',
-					Text: "Be who you are and say what you feel, because those who mind don’t
-					matter and those who matter don’t mind.",
+					Text: "Be who you are and say what you feel, because those who mind don\'\t matter and those who matter don\'\t mind.",
 					Rating: '' 
 				}
 			]
 
 
-	$scope.addQuote = function(event){ 
- 			var newQuote = { 
- 				author: $scope.addAuthor, 
- 				text: $scope.addText, 
- 			} 
- 			$scope.quotes.push(newQuote) 
- 			event.preventDefault(); 
- 			$scope.addAuthor = '' 
- 			$scope.addText = '' 
- 		} 
+	// $scope.addQuote = function(event){ 
+ // 			var newQuote = { 
+ // 				author: $scope.addAuthor, 
+ // 				text: $scope.addText, 
+ // 			} 
+ // 			$scope.quotes.push(newQuote) 
+ // 			event.preventDefault(); 
+ // 			$scope.addAuthor = '' 
+ // 			$scope.addText = '' 
+ // 		} 
 
 
-
-			
 
 
 	}])
