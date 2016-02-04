@@ -1,0 +1,51 @@
+.body{
+	background-image: url('ocean.jpg');
+	background-repeat: no-repeat;
+	background-color: white; 
+	width: 100%;
+	font-family: 'Shadows Into Light Two', 'Verdana', sans-serif, cursive;
+	font-size: 14px;
+}
+
+.h1{
+	font-size: 50px;
+	text-align: center; 
+	font-family: 'Sacramento', cursive;
+
+}
+.subHeader{
+	font-size: 30px;
+	text-align: center;
+}
+.ul{
+	background-color: #ecf0f1;
+	text-align: center; 
+	padding: 1em;
+}
+
+.li{
+	display: inline;
+	font-weight: bold; 
+}
+
+.li a:hover{
+	background-color: #bdc3c7;
+}
+
+.form{
+	font-size: 12px; 
+	text-align: center;
+	display: block; 
+	border: solid 1px black;
+	width: 500px;
+	height: 200px;
+}
+
+.h4 {
+	text-align: center; 
+}
+
+.button{
+	background-color: #2c3e50;
+	color: #36d7b7;
+}
