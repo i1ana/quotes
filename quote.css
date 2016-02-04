@@ -4,19 +4,28 @@
 	background-color: white; 
 	width: 100%;
 	font-family: 'Shadows Into Light Two', 'Verdana', sans-serif, cursive;
-	font-size: 14px;
+	font-size: 16px;
+	text-align: center; 
+}
+
+.body h3 {
+	font-size: 25px; 
+}
+
+.body h4 {
+	font-size: 18px; 
+}
+
+.body p {
+	font-size: 16px;
 }
 
 .h1{
 	font-size: 50px;
 	text-align: center; 
 	font-family: 'Sacramento', cursive;
+}
 
-}
-.subHeader{
-	font-size: 30px;
-	text-align: center;
-}
 .ul{
 	background-color: #ecf0f1;
 	text-align: center; 
@@ -35,14 +44,10 @@
 .form{
 	font-size: 12px; 
 	text-align: center;
-	display: block; 
+	display: inline-block; 
 	border: solid 1px black;
-	width: 500px;
-	height: 200px;
-}
-
-.h4 {
-	text-align: center; 
+	width: 30em;
+	height: 20em;
 }
 
 .button{
